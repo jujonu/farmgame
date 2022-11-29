@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    background: #FDFCEF;
+}
+
+.first-block{
+    margin-bottom: 100px;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+flex-direction: column;
+justify-content: left;
+padding: 0px;
+gap: 100px;
+}
+
+.farm1{
+    display: flex;
+flex-direction: column;;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 176px;
+}
+
+.farm{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+}
+
+.farm3{
+    display:flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: flex-end;
+}
+
+
+
+
+
+.farm h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 70px;
+    color: #000000;
+    gap: 0px;
+}
+
+.farm p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    gap:0px;
+}
+
+.btn{
+    font-family: 'Noto Sans Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 70px;
+    border: none;
+    background: #FF6861;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.second-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 70px;
+}
+
+.title h1{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+.title-text{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.title-text img{
+    width: 73px;
+    height: 73px;
+    padding-right: 30px;
+}
+
+.titles{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.third-block{
+    padding-top: 120px;
+}
+
+.animals{
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display:flex;
+    gap: 300px;
+    padding: 40px 40px 40px 40px;
+}
+
+.animals1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    
+}
+
+.footer{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transform:scale(10%);
+    }
+
+    .element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transform: scale(100%);
+    }
+
+@media (max-width:990px){
+
+    .farm1{
+        gap: 0px;
+    }
+
+    .farm3{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .btn{
+        margin: 0 auto;
+    }
+
+    .container{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+    .animals{
+        flex-direction: column-reverse;
+        gap: 101px;
+    }
+
+    .animals h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+    }
+
+    .korovka{
+        margin: 0 auto;
+    }
+
+    .farm {
+        text-align: center;
+    }
+
+    .title {
+        text-align:center;
+    }
+}
+
+@media(max-width: 480px){
+
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .farm1{
+        gap: 40px;
+    }
+
+    .logo2 img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .korovka img{
+        width: 201px;
+        height: 201px;
+    }
+
+    .title-text{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title-text img {
+        padding-right: 0px;
+    }
+
+}
